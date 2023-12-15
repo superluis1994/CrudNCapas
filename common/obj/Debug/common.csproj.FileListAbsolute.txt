@@ -1,0 +1,6 @@
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\obj\Debug\common.csproj.AssemblyReference.cache
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\obj\Debug\common.csproj.CoreCompileInputs.cache
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\bin\Debug\common.dll
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\bin\Debug\common.pdb
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\obj\Debug\common.dll
+C:\Users\Sorto\Desktop\C# Practica\CrudNCapas\common\obj\Debug\common.pdb
