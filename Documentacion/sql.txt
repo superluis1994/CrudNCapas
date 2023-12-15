@@ -1,0 +1,47 @@
+--VER DATOS
+CREATE PROC SP_Mostrar
+AS
+select * FROM usuarios
+GO
+--INSERTAR DATOS
+CREATE PROC SP_Insertar
+@nombre VARCHAR(50),
+@apellido VARCHAR(50),
+@correo_electronico VARCHAR(100),
+@fecha_nacimiento date
+AS
+INSERT INTO usuarios VALUES (@nombre,@apellido,@correo_electronico,@fecha_nacimiento)
+GO
+--ACTUALIZAR DATOS
+CREATE PROC SP_Modificar
+@id int,
+@nombre VARCHAR(50),
+@apellido VARCHAR(50),
+@correo_electronico VARCHAR(100),
+@fecha_nacimiento date
+AS
+UPDATE usuarios SET nombre =@nombre, apellido = @apellido, correo_electronico = @correo_electronico, fecha_nacimiento=@fecha_nacimiento
+WHERE  id = @id
+GO
+
+--ELIMINAR
+CREATE PROC SP_Eliminar
+@ID int
+AS
+DELETE usuarios WHERE id = @ID
+GO
+
+--BUSCAR DATOS
+CREATE PROC SP_BUSCAR
+@BUSCAR VARCHAR(50)
+AS
+SELECT * FROM usuarios
+WHERE nombre LIKE @BUSCAR + '%' 
+
+--BUSCAR DATOS POR VARIOS CAMPOS
+CREATE PROC SP_BuquedaMultiple
+ @Buscar VARCHAR(100)
+AS
+SELECT * FROM usuarios
+WHERE (id LIKE @Buscar + '%') OR (nombre LIKE @Buscar + '%') OR (apellido LIKE @Buscar + '%') OR (correo_electronico LIKE @Buscar + '%');
+  GO

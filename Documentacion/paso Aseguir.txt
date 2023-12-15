@@ -1,0 +1,11 @@
+1- elegir una solucion en blanco
+2-crear las capas ,nuevo proyecto y bilbioteca de clase NET Framework
+3-crear capa common y adeentro carpeta Attributes
+4-crear capa DataAccess y crear la carpeta Connection y Entities
+5-crear la capa Domain y crear carpeta Crud
+6-Crear capa de presentacion, seleccionar Aplicacion de windows Form .NET Frameword
+7-cambiar en propiedades de la solucion, poyectos de inicio por la capa de presentacion
+8- instalar guna desde los paquete nugues
+9-crear el archivoen common/Attributes/AttributesUsuarios , crear los atributos de la base de datos.
+10- crear archivo de conexion Connection_Database en DataAcess/Connection
+11- Crear archivo en DataAcess/[nombre de] este es el que lleva las funciones buscar,
